@@ -8,7 +8,7 @@
 # Mandatory settings
 wsrep_on                 = ON
 wsrep_cluster_name       = "MariaDB Galera Cluster"
-wsrep_cluster_address    = gcomm://172.18.0.2
+wsrep_cluster_address    = gcomm://192.168.1.2, 192.168.1.3
 binlog_format            = row
 default_storage_engine   = InnoDB
 innodb_autoinc_lock_mode = 2
