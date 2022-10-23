@@ -6,11 +6,19 @@ Vagrant.configure("2") do |config|
         vb.cpus = 1
     end
 
-    config.vm.define "mariadb" do |mariadb|
-        mariadb.vm.network "public_network", ip: "192.168.1.3"
-        mariadb.vm.provision "shell",
+    config.vm.define "node01" do |node01|
+        node01.vm.network "public_network", ip: "192.168.1.3"
+        node01.vm.provision "shell",
             inline: "apt update && apt -y upgrade && apt -y dist-upgrade"
-        mariadb.vm.provision "shell",
-            inline: "apt -y install mariadb-server mariadb-client"
-  end
+        node01.vm.provision "shell",
+            inline: "apt -y install mariadb-server rsync"
+    end
+
+    config.vm.define "node02" do |node02|
+        node02.vm.network "public_network", ip: "192.168.1.4"
+        node02.vm.provision "shell",
+            inline: "apt update && apt -y upgrade && apt -y dist-upgrade"
+        node02.vm.provision "shell",
+            inline: "apt -y install mariadb-server rsync"
+    end
 end

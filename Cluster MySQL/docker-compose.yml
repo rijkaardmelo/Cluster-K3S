@@ -2,14 +2,11 @@ version: '3.9'
 services:
   mysql: 
     build: .
-    image: mysql-cluster
-    # image: mariadb:10.6.8-focal
-    container_name: mysql-cluster
-    hostname: mysql-cluster
-    # stdin_open: true
-    # tty: true
-    environment:
-      MARIADB_ROOT_PASSWORD: "mariadb"
+    image: mariadb-cluster
+    container_name: mariadb-master-01
+    hostname: mariadb-master-01
+    # environment:
+    #   MARIADB_ROOT_PASSWORD: "mariadb"
     restart: always
     networks:
       - mysql-cluster
