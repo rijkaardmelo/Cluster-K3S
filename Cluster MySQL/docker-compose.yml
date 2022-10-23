@@ -5,8 +5,10 @@ services:
     image: mariadb-cluster
     container_name: mariadb-master-01
     hostname: mariadb-master-01
-    # environment:
-    #   MARIADB_ROOT_PASSWORD: "mariadb"
+    stdin_open: true
+    tty: true
+    environment:
+      MARIADB_ROOT_PASSWORD: "mariadb"
     restart: always
     networks:
       - mysql-cluster
