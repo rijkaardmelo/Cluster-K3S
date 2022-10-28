@@ -20,4 +20,4 @@
 
 3 - Instalando Longhorn
 
-    helm install longhorn longhorn/longhorn --namespace longhorn --create-namespace
+    helm install longhorn longhorn/longhorn --namespace longhorn --create-namespace --set persistence.reclaimPolicy=Retain
