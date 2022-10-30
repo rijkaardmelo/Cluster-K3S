@@ -36,7 +36,7 @@
 
     * Criando arquivo `config`
 
-            sudo touch config
+            sudo touch ~/.kube/config
 
 2 - Configurando a chave de acesso
 

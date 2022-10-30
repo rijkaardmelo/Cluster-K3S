@@ -1,4 +1,4 @@
-<h1 align = "center"> Instalação e Configuração Traefik </h1>
+<h1 align = "center"> Instalação Traefik </h1>
 
 <h2 align = "center"> Na máquina do administrador do Cluster </h2>
 

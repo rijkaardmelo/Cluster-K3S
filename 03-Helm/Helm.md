@@ -1,4 +1,4 @@
-<h1 align = "center"> Instalação e Configuração Helm </h1>
+<h1 align = "center"> Instalação Helm </h1>
 
 <h2 align = "center"> Na máquina do administrador do Cluster </h2>
 

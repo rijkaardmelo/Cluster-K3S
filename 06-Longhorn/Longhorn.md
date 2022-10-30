@@ -1,4 +1,4 @@
-<h1 align = "center"> Instalação e Configuração Longhorn </h1>
+<h1 align = "center"> Instalação Longhorn </h1>
 
 <h2 align = "center"> Nas máquinas do Cluster </h2>
 
