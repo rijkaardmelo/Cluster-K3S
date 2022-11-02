@@ -8,8 +8,5 @@ spec:
     - name: http
       protocol: TCP
       port: 80
-    - name: https
-      port: 443
-      protocol: TCP
   selector:
     app: nginx
